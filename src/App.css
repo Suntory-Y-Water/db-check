@@ -1,0 +1,47 @@
+/* src/App.css */
+
+body {
+  background-color: #181818;
+  color: #fff;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+button.edit-btn {
+  color: green;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.delete-btn {
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input[type='text'],
+button {
+  margin: 5px 0;
+}
