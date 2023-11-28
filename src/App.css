@@ -1,47 +1,73 @@
-/* src/App.css */
-
-body {
-  background-color: #181818;
-  color: #fff;
-}
-
 .App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: Arial, sans-serif;
+  max-width: 768px;
+  margin: auto;
+  padding: 24px;
 }
 
-ul {
-  width: 100%;
-  max-width: 600px;
-  padding: 0;
-}
-
-li {
+.input-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.todo-item,
+.edit-item {
+  display: flex;
   align-items: center;
-  background-color: #333;
+  justify-content: space-between;
+  background-color: #f9f9f9;
   padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
-button.edit-btn {
-  color: green;
-  background: none;
-  border: none;
-  cursor: pointer;
+.task-input {
+  width: 50%;
 }
 
-button.delete-btn {
-  color: red;
-  background: none;
-  border: none;
-  cursor: pointer;
+.todo-text {
+  flex-grow: 1;
 }
 
-input[type='text'],
+.completed {
+  text-decoration: line-through;
+}
+
+.edit-input,
 button {
-  margin: 5px 0;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.save-btn:hover,
+.edit-btn:hover {
+  background-color: rgb(97, 226, 102);
+}
+
+.delete-btn:hover,
+.cancel-btn:hover {
+  background-color: #fc9891;
+}
+
+.edit-btn,
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-btn,
+.cancel-btn {
+  background-color: #ed1624;
+  color: white;
 }
